@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_EMAIL, "danyalhsnzadh69@gmail.com");
         intent.putExtra(Intent.EXTRA_SUBJECT, "order coffee from app");
-        intent.putExtra(Intent.EXTRA_STREAM, order());
+        intent.putExtra(Intent.EXTRA_TEXT, order());
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
